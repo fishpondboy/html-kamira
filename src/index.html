@@ -17,18 +17,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 	<!-- css files -->
-	<link href="./src/css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
-	<link href="./src/css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet"><!-- fontawesome css -->
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+	<link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
 	<!-- //css files -->
 
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+	<link
+		href="//fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,vietnamese"
+		rel="stylesheet">
 	<!-- //google fonts -->
 	<!-- owl -->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-	<script src="./src/js/main.js"></script>
+	<script src="main.js"></script>
 
 </head>
 
@@ -36,52 +38,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 	<!-- //header -->
-	    <!-- Navbar-->
-		<header class="header">
-			<nav class="navbar navbar-expand-lg fixed-top py-3">
-			  <div class="container">
-				<a href="#" class="navbar-brand text-uppercase font-weight-bold"
-				  >KAMIRA</a
-				>
-				<button
-				  type="button"
-				  data-toggle="collapse"
-				  data-target="#navbarSupportedContent"
-				  aria-controls="navbarSupportedContent"
-				  aria-expanded="false"
-				  aria-label="Toggle navigation"
-				  class="navbar-toggler navbar-toggler-right"
-				>
-				  <i class="fa fa-bars"></i>
-				</button>
-	  
-				<div id="navbarSupportedContent" class="collapse navbar-collapse">
-				  <ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-					  <a href="#" class="nav-link text-uppercase font-weight-bold"
-						>Awal <span class="sr-only">(current)</span></a
-					  >
+	<header class="py-4">
+		<div class="container">
+			<div id="logo">
+				<h1> <a href="index.html"><img src="images/logokamira.png" alt=""> Kamira Energy</a></h1>
+			</div>
+			<!-- nav -->
+			<nav class="d-lg-flex">
+
+				<label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true"></span></label>
+				<input type="checkbox" id="drop" />
+				<ul class="menu mt-2 ml-auto">
+					<li class=""><a href="index.html">Home</a></li>
+					<li class=""><a href="#about">About</a></li>
+					<li class=""><a href="#process">Nilai</a></li>
+					<li class=""><a href="#daftar">Mitra Kamira</a></li>
+					<li><a href="#partners">Partners</a></li>
+
+					<li class="">
+						<!-- First Tier Drop Down -->
+						<!-- <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down"
+								aria-hidden="true"></span> </label>
+						<a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+						<input type="checkbox" id="drop-2" />
+						<ul class="inner-ul">
+							<li><a href="#process">Marketing Process</a></li>
+							<li><a href="#daftar">Mitra Kamira</a></li>
+							<li><a href="#partners">Partners</a></li>
+						</ul> -->
 					</li>
-					<li class="nav-item">
-					  <a href="#" class="nav-link text-uppercase font-weight-bold"
-						>Nilai</a
-					  >
-					</li>
-					<li class="nav-item">
-					  <a href="#" class="nav-link text-uppercase font-weight-bold"
-						>Layanan</a
-					  >
-					</li>
-					<li class="nav-item">
-					  <a href="#" class="nav-link text-uppercase font-weight-bold"
-						>Daftar</a
-					  >
-					</li>
-				  </ul>
-				</div>
-			  </div>
+					<!-- <li class=""><a href="team.html">Team Page</a></li>
+					<li class=""><a href="contact.html">Contact Page</a></li> -->
+				</ul>
+				<!-- <div class="login-icon ml-lg-2">
+					<a class="user" href="#popup3"> Login</a>
+				</div> -->
 			</nav>
-		  </header>
+			<div class="clear"></div>
+			<!-- //nav -->
+		</div>
+	</header>
 	<!-- //header -->
 
 	<!-- banner -->
@@ -93,11 +89,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h2>Sampah Bukanlah Masalah Melainkan Sumber Daya</h2>
 						<p></p>
 					</div>
-					<a class="btn mr-2 text-capitalize" href="#popup1">Get Your App </a>
-					<a class="btn text-capitalize" href="#popup2">Watch our Video </a>
+					<a class="btn mr-2 text-capitalize" href="#popup1">read more </a>
+					<a class="btn text-capitalize" href="#popup2">watch video </a>
 				</div>
 				<div class="col-lg-6 col-md-8 mt-lg-0 mt-sm-5 mt-3 banner-image text-lg-center" id="banner">
-					<img src="./src/img/pngban.png" alt="" class="img-fluid" id="bannner">
+					<img src="images/pngban.png" alt="" class="img-fluid" id="bannner">
 				</div>
 			</div>
 		</div>
@@ -109,11 +105,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container py-lg-5 py-sm-3">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 about-left">
-					<img src="./src/img/logokamira.png" alt="" style="height: 45%;">
+					<img src="images/logokamira.png" alt="" style="height: 45%;">
 				</div>
 				<div class="col-lg-6 col-md-6 about-text">
 					<h3>Kamira Energy </h3>
-					<p class="mt-3">Kamira Energy membantu mendaur ulang sampahmu menjadi energi. (Penjelasan Singkat Tentag Kamira)</p>
+					<p class="mt-3">Integer pulvinar leo id viverra feugiat. Pellentesque libero justo, semper at tempus
+						vel, ultrices in ligula. Nulla uter sollicitudin velit. Sed porttitor orci vel ferm.</p>
 					<p class="mt-2">Integer pulvinar leo id viverra feugiat. Pellentesque libero justo, semper at tempus
 						vel, ultrices in ligula. Nulla uter sollicitudin velit. Sed porttitor orci vel fermentum elit
 						maximus. Curabitur ut turpis massa in condimentum libero. Pellentesque maximus.</p>
@@ -180,31 +177,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3 class="heading mb-5 text-center">Nilai </h3>
 			<div class="row process-grids">
 				<div class="col-lg-4 col-md-6 my-lg-4">
-					<div class="text-center">
-						<img src="./src/img/mengurangipng.png" alt="" class="img-fluid">
+					<div class="">
+						<img src="images/mengurangipng.png" alt="" class="img-fluid">
 					</div>
-					<h4 class="feed-title my-md-3 mb-3 text-center">Mengurangi</h4>
-					<p class="text-justify"> Mengurangi jumlah sampah warga (Organik dan Plastik) menuju ke TPA. Karena bisa dikelola dan
+					<h4 class="feed-title my-md-3 mb-3">Mengurangi</h4>
+					<p> Mengurangi jumlah sampah warga (Organik dan Plastik) menuju ke TPA. Karena bisa dikelola dan
 						dimanfaatkan sendiri.</p>
 				</div>
 				<div class="col-lg-4 col-md-6 my-lg-4 mt-md-0 mt-4">
-					<div class="text-center">
-						<img src="./src/img/mudah.png" alt="" class="img-fluid">
+					<div style="padding-right: 100px;">
+						<img src="images/mudah.png" alt="" class="img-fluid">
 					</div>
-					<h4 class="feed-title my-md-3 mb-3 text-center">Memudahkan</h4>
-					<p class="text-justify"> Memudahkan warga untuk memanggil kolektor sampah dengan kepastian jemput tanpa biaya. Anda juga
+					<h4 class="feed-title my-md-3 mb-3">Memudahkan</h4>
+					<p> Memudahkan warga untuk memanggil kolektor sampah dengan kepastian jemput tanpa biaya. Anda juga
 						Mendapatkan poin yang dapat ditukarkan dengan sembako atau pulsa.</p>
 				</div>
 				<div class="col-lg-4 col-md-6 my-lg-4 mt-sm-5 mt-4">
-					<div class="text-center">
-						<img src="./src/img/menambah.png" alt="" class="img-fluid">
+					<div class="">
+						<img src="images/menambah.png" alt="" class="img-fluid">
 					</div>
-					<h4 class="feed-title my-md-3 mb-3 text-center">Menambah</h4>
-					<p class="text-justify"> Memberikan nilai tambah dari sampah untuk diolah menjadi energi untuk manfaat ekonomi.</p>
+					<h4 class="feed-title my-md-3 mb-3">Menambah</h4>
+					<p> Memberikan nilai tambah dari sampah untuk diolah menjadi energi untuk manfaat ekonomi.</p>
 				</div>
 				<!-- <div class="col-lg-3 col-md-6 mt-lg-4 mt-sm-5 mt-4 w3pvt-ab">
 					<div class="">
-						<img src="./src/img/2.png" alt="" class="img-fluid">
+						<img src="images/2.png" alt="" class="img-fluid">
 					</div>
 					<h4 class="feed-title my-md-3 mb-3">Product Sales</h4>
 					<p> Excepteur ut occaecat proident, sunt in culpa quis. Phasellus lacinia id erat risus quis.</p>
@@ -252,11 +249,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="row">
 				<div class="col-md-12 col-sm-4">
 					<section class="customer-logos slider">
-						<div class="slide"><img src="./src/img/aqua.jpg" class="img-responsive">
+						<div class="slide"><img src="images/aqua.jpg" class="img-responsive">
 						</div>
-						<div class="slide"><img src="./src/img/garudafood.png" class="img-responsive"
+						<div class="slide"><img src="images/garudafood.jpg" class="img-responsive"
 								style="padding-top: 50px;"></div>
-						<div class="slide"><img src="./src/img/jne.png" class="img-responsive" style="padding-top: 70px;">
+						<div class="slide"><img src="images/jne.jpg" class="img-responsive" style="padding-top: 70px;">
 						</div>
 					</section>
 				</div>
@@ -368,7 +365,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- popup -->
 	<div id="popup1" class="popup-effect">
 		<div class="popup">
-			<img src="./src/img/banner.png" alt="Popup Image" class="img-fluid" />
+			<img src="images/banner.png" alt="Popup Image" class="img-fluid" />
 			<p class="mt-4 ">Download Aplikasi Kamira Untuk Smartphone Anda</p>
 			<a class="close" href="#">&times;</a>
 		</div>
@@ -455,7 +452,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //popup for register -->
-	<script src="./src/js/navbar.js"></script>
+
 </body>
 
 </html>
